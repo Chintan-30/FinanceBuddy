@@ -1,1 +1,36 @@
 
+# Ignore build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Dd]ist/
+[Dd]ev/
+[Dd]ebug-AnyCPU/
+[Dd]ebug-x64/
+[Dd]ebug-x86/
+[Dd]ist/
+
+# User-specific files
+.idea/
+.vscode/
+.vs/
+
+# ASP.NET Core specific
+wwwroot/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows Installer files (ignore folders)
+/_ReSharper*/
+
+# Windows Installer files
+/packages/
+
+# Node.js modules (if you use npm for frontend)
+node_modules/
+
+# ASP.NET Core Configuration files (e.g. appsettings.json)
+appsettings.Development.json
