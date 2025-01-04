@@ -34,3 +34,6 @@ node_modules/
 
 # ASP.NET Core Configuration files (e.g. appsettings.json)
 appsettings.Development.json
+# Ignore obj and bin directories
+bin/
+obj/
