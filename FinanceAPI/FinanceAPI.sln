@@ -1,9 +1,25 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35521.163 d17.12
+VisualStudioVersion = 17.12.35521.163
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanceAPI", "FinanceAPI\FinanceAPI.csproj", "{8C5983DB-F486-4B8B-9C48-FC9F629EA189}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FinanceService", "FinanceService", "{54104123-BCE0-4C95-80F2-13FDB1EA628B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanceService", "FinanceService\FinanceService.csproj", "{E72D9079-2DEA-4710-A675-04D0FA3CCB63}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataAccess", "DataAccess", "{3E22D6D7-DC6D-4DD0-AD91-34B066FC4E42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IFinanceService", "IFinanceService\IFinanceService.csproj", "{38E525FA-FF48-408D-8366-2D685953E7CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanceRepository", "FinanceRepository\FinanceRepository.csproj", "{77C92BEF-54FC-4520-A5CA-537BE2B63E31}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IFinanceRepository", "IFinanceRepository\IFinanceRepository.csproj", "{1F66BB19-9FC9-4367-9006-DA05552055E3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EntityModels", "EntityModels", "{85513965-B56E-4DB0-9B10-1B0B59FA5125}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityModels", "EntityModels\EntityModels.csproj", "{2EAA9E67-68CF-48B5-984C-7A9710BC4B8C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +31,35 @@ Global
 		{8C5983DB-F486-4B8B-9C48-FC9F629EA189}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C5983DB-F486-4B8B-9C48-FC9F629EA189}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C5983DB-F486-4B8B-9C48-FC9F629EA189}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E72D9079-2DEA-4710-A675-04D0FA3CCB63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E72D9079-2DEA-4710-A675-04D0FA3CCB63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E72D9079-2DEA-4710-A675-04D0FA3CCB63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E72D9079-2DEA-4710-A675-04D0FA3CCB63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38E525FA-FF48-408D-8366-2D685953E7CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38E525FA-FF48-408D-8366-2D685953E7CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38E525FA-FF48-408D-8366-2D685953E7CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38E525FA-FF48-408D-8366-2D685953E7CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77C92BEF-54FC-4520-A5CA-537BE2B63E31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77C92BEF-54FC-4520-A5CA-537BE2B63E31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77C92BEF-54FC-4520-A5CA-537BE2B63E31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77C92BEF-54FC-4520-A5CA-537BE2B63E31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F66BB19-9FC9-4367-9006-DA05552055E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F66BB19-9FC9-4367-9006-DA05552055E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F66BB19-9FC9-4367-9006-DA05552055E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F66BB19-9FC9-4367-9006-DA05552055E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EAA9E67-68CF-48B5-984C-7A9710BC4B8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EAA9E67-68CF-48B5-984C-7A9710BC4B8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EAA9E67-68CF-48B5-984C-7A9710BC4B8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EAA9E67-68CF-48B5-984C-7A9710BC4B8C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E72D9079-2DEA-4710-A675-04D0FA3CCB63} = {54104123-BCE0-4C95-80F2-13FDB1EA628B}
+		{38E525FA-FF48-408D-8366-2D685953E7CE} = {54104123-BCE0-4C95-80F2-13FDB1EA628B}
+		{77C92BEF-54FC-4520-A5CA-537BE2B63E31} = {3E22D6D7-DC6D-4DD0-AD91-34B066FC4E42}
+		{1F66BB19-9FC9-4367-9006-DA05552055E3} = {3E22D6D7-DC6D-4DD0-AD91-34B066FC4E42}
+		{2EAA9E67-68CF-48B5-984C-7A9710BC4B8C} = {85513965-B56E-4DB0-9B10-1B0B59FA5125}
 	EndGlobalSection
 EndGlobal
