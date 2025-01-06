@@ -14,6 +14,8 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseMySql(builder.Configuration.GetConnectionString("FinanceDatabase"),
     new MySqlServerVersion(new Version(8, 0, 40))));
 
+builder.Services.AddSingleton(new DatabaseConnection(builder.Configuration.GetConnectionString("FinanceDatabase")));
+
 // Register repositories
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 

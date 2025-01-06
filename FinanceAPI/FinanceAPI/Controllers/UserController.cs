@@ -41,5 +41,17 @@ namespace FinanceAPI.Controllers
             await _userRepository.AddUserAsync(user);
             return CreatedAtAction(nameof(GetUser), new { id = user.Id }, user);
         }
+
+        [HttpGet("GetUserbyIdUsingDapper", Name ="GetUserbyIdUsingDapper")]
+        public IActionResult GetUserById(int id)
+        {
+            var user = _userRepository.GetUserById(id);
+            if (user == null)
+            {
+                return NotFound(new { Message = "User not found" });
+            }
+
+            return Ok(user);
+        }
     }
 }
